@@ -183,7 +183,7 @@ function update(newDataArray) {
     //Handle entering elements
     var present = rects.enter().append('rect')  //add new DOM elements
                 .classed('new', true)  //add style class to entering
-                .merge(rect); //save new DOM elements in a selection
+                .merge(rects); //save new DOM elements in a selection
 
     //Handle now present elements (the merged selection)
     present.classed('here', true);  //add style class to current (including new)
